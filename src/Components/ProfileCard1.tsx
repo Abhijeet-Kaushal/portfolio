@@ -56,8 +56,10 @@ const StyledCard = styled(Box)(({ theme }) => ({
 }));
 
 const StyledAvatar = styled(Avatar)(({ theme }) => ({
-  width: 240,
-  height: 240,
+  // width: 240,
+  // height: 240,
+  width: theme.breakpoints.values.md > 900 ? 240 : 140,
+  height: theme.breakpoints.values.md > 900 ? 240 : 140,
   marginBottom: theme.spacing(3),
   border: "4px solid white",
   boxShadow: "0 8px 24px rgba(102, 126, 234, 0.3)",
@@ -129,7 +131,15 @@ const Divider = styled(Box)({
 export const ProfileCard1 = () => {
   return (
     <StyledCard>
-      <StyledAvatar variant="square" src="pic2.jpeg" alt="Abhijeet Kaushal" />
+      <StyledAvatar
+        sx={{
+          width: { xs: 140, md: 240 }, // Smaller on mobile
+          height: { xs: 140, md: 240 },
+        }}
+        variant="square"
+        src="pic2.jpeg"
+        alt="Abhijeet Kaushal"
+      />
 
       <Typography
         variant="h5"
