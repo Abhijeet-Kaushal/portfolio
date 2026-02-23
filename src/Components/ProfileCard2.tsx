@@ -256,7 +256,7 @@ export const ProfileCard2 = () => {
       subtitle: "React + dnd-kit library",
       description: `This project demonstrates a two-way drag and drop implementation in React using the dnd-kit library. Unlike one-way drag and drop, the two-way setup is a bit more complex because it requires two drop zones.`,
       tags: ["React", "TypeScript", "dnd-kit"],
-      link: "#",
+      link: "https://2waydragdrop.netlify.app/",
     },
     {
       title: "Portfolio Website",
@@ -264,7 +264,7 @@ export const ProfileCard2 = () => {
       description:
         "A modern, responsive portfolio showcasing projects and skills with smooth animations and glassmorphism design.",
       tags: ["React", "MUI", "TypeScript"],
-      link: "#",
+      link: "https://abhijeetkaushal.netlify.app/",
     },
     {
       title: "E-commerce Dashboard",
